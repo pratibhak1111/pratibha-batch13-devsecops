@@ -46,6 +46,9 @@ Design one SG and attach it to your EC2 instance.
 * SG exists and has 3 inbound rules
 * SSH source is **your IP only**, not 0.0.0.0/0
 
+### Screenshot
+
+![security-group](security-group.png)
 ---
 
 ## Task 2: Create SSH Key Pair — ED25519 + PEM
