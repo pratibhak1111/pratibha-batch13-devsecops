@@ -135,6 +135,8 @@ hostname
 pwd
 ```
 ### Screenshot
+![Mobaxterm](Mobaxterm.png)
+![ssh](ssh.png)
 
 ## Task 5: Linux Commands Practice 
 
