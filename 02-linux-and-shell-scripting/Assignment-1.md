@@ -76,6 +76,7 @@ chmod 400 devops-key.pem
 ### Screenshot
 
 ![key-pair](key-pair.png)
+![key-pair-permission](key-pair-permission.png)
 ---
 
 ## Task 3: Launch EC2 Instance (Ubuntu + t2.micro)
@@ -104,6 +105,9 @@ Provision a Ubuntu EC2 and attach SG + key.
 * Public IP is present
 * SG attached is correct
 
+### Screenshot
+
+![ec2](ec2.png)
 ---
 
 ## Task 4: Connect to EC2 via SSH
@@ -130,6 +134,7 @@ whoami
 hostname
 pwd
 ```
+### Screenshot
 
 ## Task 5: Linux Commands Practice 
 
