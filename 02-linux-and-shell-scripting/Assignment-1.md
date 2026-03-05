@@ -73,6 +73,9 @@ chmod 400 devops-key.pem
 
 ✅ This prevents “UNPROTECTED PRIVATE KEY FILE” errors.
 
+### Screenshot
+
+![key-pair](key-pair.png)
 ---
 
 ## Task 3: Launch EC2 Instance (Ubuntu + t2.micro)
