@@ -1,12 +1,28 @@
 **Module 4 – Environment Setup
 Installed Development Tools**
+
 **Java**
 java -version
-openjdk version "17.0.8"
+openjdk version "17.0.18"
 **Maven**
 mvn -version
 Apache Maven 3.8.7
-Node.js
+
+**Steps :**
+sudo apt update
+sudo apt upgrade
+sudo apt install openjdk-17-jdk -y
+sudo apt install maven -y
+mvn compile (run where pom.xml is present) (target folder generated)
+mvn test 
+mvn package (jar generated)
+java -jar java-demoapp-1.0.0.jar 
+
+<img width="1907" height="972" alt="image" src="https://github.com/user-attachments/assets/20709430-93eb-43d4-a6b7-f6bb086b6213" />
+<img width="1918" height="575" alt="image" src="https://github.com/user-attachments/assets/b8f44ede-3e0c-4fca-8742-730907a1812d" />
+
+***********************************************************
+**Node.js**
 node -v
 v18.17.0
 NPM
