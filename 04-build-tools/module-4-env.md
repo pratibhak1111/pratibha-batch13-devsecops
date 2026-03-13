@@ -20,7 +20,7 @@ npm -v
 *********************************************************
 **Python**
 python3 --version
-Python 3.10.12
+Python 3.10.12  
 **Pip**
 pip3 --version
 pip 22.0.2
@@ -30,6 +30,7 @@ pip 22.0.2
 .NET SDK
 dotnet --version
 7.0.401
+
 
 
 
