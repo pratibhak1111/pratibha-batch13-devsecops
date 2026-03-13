@@ -2,7 +2,7 @@
 
 ##Java
 java -version
-openjdk version "17.0.18"
+openjdk version "17.0.18"  
 ##Maven
 mvn -version
 Apache Maven 3.8.7
@@ -30,6 +30,7 @@ pip 22.0.2
 .NET SDK
 dotnet --version
 7.0.401
+
 
 
 
