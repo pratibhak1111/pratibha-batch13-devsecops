@@ -1,6 +1,6 @@
-MongoDB setup
-PostgreSQL setup
-MySQL setup  
+MongoDB setup  
+PostgreSQL setup  
+MySQL setup    
 1. Update and Upgrade Packages  
 sudo apt update  
 sudo apt upgrade -y  
@@ -38,7 +38,7 @@ ________________________________________
 7. Create a User and Grant Privileges  
 CREATE USER 'adi'@'localhost' IDENTIFIED BY 'Test@123';  
 ALTER USER 'adi'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Test@123';    
-FLUSH PRIVILEGES;  
+FLUSH PRIVILEGES;    
 
-GRANT ALL PRIVILEGES ON bankappdb.* TO 'adi'@'localhost';
-FLUSH PRIVILEGES;
+GRANT ALL PRIVILEGES ON bankappdb.* TO 'adi'@'localhost';  
+FLUSH PRIVILEGES;  
