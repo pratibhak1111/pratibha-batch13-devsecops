@@ -15,6 +15,8 @@ v18.17.0
 NPM  
 npm -v  
 9.6.7  
+<img width="720" height="88" alt="image" src="https://github.com/user-attachments/assets/cc062065-7b8d-4b7b-9531-eb91c03af770" />  
+
 *********************************************************
 **Python**  
 python3 --version  
