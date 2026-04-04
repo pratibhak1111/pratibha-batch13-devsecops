@@ -42,3 +42,8 @@ GRANT ALL PRIVILEGES ON bankappdb.* TO 'adi'@'localhost';
 FLUSH PRIVILEGES;  
 
 <img width="1918" height="966" alt="image" src="https://github.com/user-attachments/assets/2db61801-23e7-4f29-903c-09f58380d177" />  
+<img width="1917" height="970" alt="image" src="https://github.com/user-attachments/assets/1534fcf0-c39e-4bdf-86ad-8bbc5c292c4e" />  
+<img width="1912" height="830" alt="image" src="https://github.com/user-attachments/assets/4ba9b2ec-23d7-41b9-88d6-85bb59d88ca3" />
+<img width="1008" height="727" alt="image" src="https://github.com/user-attachments/assets/57c25767-870d-4f5c-ac99-239d19350774" />
+
+
