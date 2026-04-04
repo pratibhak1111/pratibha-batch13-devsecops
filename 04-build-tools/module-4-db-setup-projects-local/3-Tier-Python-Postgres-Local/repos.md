@@ -1,53 +1,40 @@
 **Installation**  
 **1. Setting Up Python Virtual Environment**  
 Install the Python 3.12 virtual environment package:  
-
 sudo apt install python3.12-venv -y  
 Create a virtual environment:  
-
 python3 -m venv myenv  
 Activate the virtual environment:  
-
 source myenv/bin/activate  
 Install required Python libraries from requirements.txt:  
-
 First, ensure pip is installed:  
-
 sudo apt install python3-pip -y  
 Then, install the required libraries:  
-
 pip3 install -r requirements.txt  
-2. Installing PostgreSQL  
+
+**2. Installing PostgreSQL**    
 To install and set up PostgreSQL, follow these steps:  
-
 Install PostgreSQL and additional tools:  
-
 sudo apt-get install postgresql postgresql-contrib  
 Start the PostgreSQL service:  
-
 sudo systemctl start postgresql  
 Enable PostgreSQL to start on boot:  
-
 sudo systemctl enable postgresql  
-3. Setting Up PostgreSQL Database  
+
+**3. Setting Up PostgreSQL Database**    
 Switch to the PostgreSQL user:  
-
 sudo -i -u postgres  
-
-
 psql  
 Create a new PostgreSQL user:  
-
 CREATE USER root WITH PASSWORD 'root';  
 Create a new PostgreSQL database:  
-
 CREATE DATABASE my_database;  
 Grant all privileges on the database to the new user:  
 
 GRANT ALL PRIVILEGES ON DATABASE my_database TO root;  
 Connect to the new database:  
+\c my_database
 
-\c my_database  
 Grant all privileges on the public schema to the user:  
  
 GRANT ALL PRIVILEGES ON SCHEMA public TO root;  
