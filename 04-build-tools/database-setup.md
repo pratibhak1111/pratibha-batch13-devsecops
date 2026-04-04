@@ -1,4 +1,44 @@
-**MongoDB setup**    
+**MongoDB setup**     
+**1. Installing MongoDB**    
+To install MongoDB, execute the following commands in your terminal:    
+Add MongoDB's GPG key and repository:    
+
+curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | \
+sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg \
+--dearmor  
+echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list  
+
+Install MongoDB:  
+sudo apt update  
+sudo apt install -y mongodb-org  
+
+Enable and Start MongoDB service:  
+sudo systemctl enable mongod  
+sudo systemctl start mongod  
+
+**2. Setting Up MongoDB**  
+Install MongoDB Shell:  
+Follow the installation guide at MongoDB Shell Installation.  
+
+Access MongoDB Terminal:  
+To interact with your MongoDB instance, open the MongoDB shell using:  
+
+mongosh  
+
+Manipulate Databases and Collections:  
+
+Show databases:  
+show dbs;  
+
+Use a specific database:  
+use db_name;  
+
+Show collections in the database:  
+show collections;  
+
+Query the Products collection:  
+db.Products.find().pretty();  
+
 **PostgreSQL setup**  
 **Installation**  
 **1. Setting Up Python Virtual Environment**  
