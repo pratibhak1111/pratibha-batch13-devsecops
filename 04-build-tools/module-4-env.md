@@ -29,7 +29,7 @@ pip 24.0
 **************************************************************
 .NET SDK  
 dotnet --version  
-7.0.401  
+8.0.125    
 <img width="1117" height="267" alt="image" src="https://github.com/user-attachments/assets/5b29532a-eb68-4ae5-97b7-9dcc06675c1b" />  
 
 
