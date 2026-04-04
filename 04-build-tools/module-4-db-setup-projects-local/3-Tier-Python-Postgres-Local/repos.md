@@ -1,5 +1,5 @@
 **Installation**  
-1. Setting Up Python Virtual Environment  
+**1. Setting Up Python Virtual Environment**  
 Install the Python 3.12 virtual environment package:  
 
 sudo apt install python3.12-venv -y  
