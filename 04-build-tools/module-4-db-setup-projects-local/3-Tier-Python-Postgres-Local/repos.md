@@ -1,84 +1,85 @@
-**Installation**  
-**1. Setting Up Python Virtual Environment**  
-Install the Python 3.12 virtual environment package:  
-sudo apt install python3.12-venv -y  
+**Installation**    
+**1. Setting Up Python Virtual Environment**    
+Install the Python 3.12 virtual environment package:    
+sudo apt install python3.12-venv -y    
 
-Create a virtual environment:  
+Create a virtual environment:    
 python3 -m venv myenv  
-Activate the virtual environment:  
-source myenv/bin/activate  
 
-Install required Python libraries from requirements.txt:  
-First, ensure pip is installed:  
-sudo apt install python3-pip -y  
+Activate the virtual environment:    
+source myenv/bin/activate    
 
-Then, install the required libraries:  
-pip3 install -r requirements.txt  
+Install required Python libraries from requirements.txt:    
+First, ensure pip is installed:    
+sudo apt install python3-pip -y    
 
-**2. Installing PostgreSQL**    
-To install and set up PostgreSQL, follow these steps:  
-Install PostgreSQL and additional tools:  
-sudo apt-get install postgresql postgresql-contrib 
+Then, install the required libraries:    
+pip3 install -r requirements.txt    
 
-Start the PostgreSQL service:  
-sudo systemctl start postgresql  
+**2. Installing PostgreSQL**      
+To install and set up PostgreSQL, follow these steps:    
+Install PostgreSQL and additional tools:    
+sudo apt-get install postgresql postgresql-contrib   
 
-Enable PostgreSQL to start on boot:  
-sudo systemctl enable postgresql  
+Start the PostgreSQL service:    
+sudo systemctl start postgresql    
 
-**3. Setting Up PostgreSQL Database**    
-Switch to the PostgreSQL user:  
+Enable PostgreSQL to start on boot:    
+sudo systemctl enable postgresql    
 
-sudo -i -u postgres  
-psql  
+**3. Setting Up PostgreSQL Database**      
+Switch to the PostgreSQL user:    
 
-Create a new PostgreSQL user:  
-CREATE USER root WITH PASSWORD 'root';  
+sudo -i -u postgres    
+psql    
 
-Create a new PostgreSQL database:  
-CREATE DATABASE my_database;  
+Create a new PostgreSQL user:    
+CREATE USER root WITH PASSWORD 'root';    
 
-Grant all privileges on the database to the new user:  
-GRANT ALL PRIVILEGES ON DATABASE my_database TO root;  
+Create a new PostgreSQL database:    
+CREATE DATABASE my_database;    
 
-Connect to the new database:  
-\c my_database
+Grant all privileges on the database to the new user:    
+GRANT ALL PRIVILEGES ON DATABASE my_database TO root;    
 
-Grant all privileges on the public schema to the user:  
-GRANT ALL PRIVILEGES ON SCHEMA public TO root;  
+Connect to the new database:    
+\c my_database  
 
-Grant create privileges on the database to the user:  
-GRANT CREATE ON DATABASE my_database TO root;  
+Grant all privileges on the public schema to the user:    
+GRANT ALL PRIVILEGES ON SCHEMA public TO root;    
 
-**List all databases**    
-\l  
+Grant create privileges on the database to the user:    
+GRANT CREATE ON DATABASE my_database TO root;    
 
-**Connect to a database**      
-\c your_database_name  
+**List all databases**      
+\l    
 
-**List all schemas**  
-\dn  
+**Connect to a database**        
+\c your_database_name    
 
-**List tables in current schema**  
-\dt  
+**List all schemas**    
+\dn    
 
-**List tables in specific schema**  
-\dt schema_name.*  
+**List tables in current schema**    
+\dt    
 
-**Describe table structure**  
-\d table_name  
+**List tables in specific schema**    
+\dt schema_name.*    
 
-**Show data from table**  
-SELECT * FROM table_name;  
+**Describe table structure**    
+\d table_name    
 
-Running the Application  
-Once the environment and database are set up, you can run the application with the following steps:  
+**Show data from table**    
+SELECT * FROM table_name;    
 
-Ensure your virtual environment is activated:  
-source myenv/bin/activate  
+Running the Application    
+Once the environment and database are set up, you can run the application with the following steps:    
 
-Run the application:  
-python3 run.py  
+Ensure your virtual environment is activated:    
+source myenv/bin/activate    
+
+Run the application:    
+python3 run.py    
 
 The application will start, and you can access it via the specified host and port in your configuration.  
 <img width="1905" height="968" alt="image" src="https://github.com/user-attachments/assets/a565624f-a8db-4645-9dc2-1ad54d8f026c" />    
